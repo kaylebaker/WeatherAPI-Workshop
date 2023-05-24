@@ -1,9 +1,13 @@
 import urllib.request
 import json
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 # OpenWeather API key and base endpoint URL
 base_url = 'https://api.openweathermap.org/data/2.5/weather?'
-API_KEY = '3c929f3f47fb38fc03148347f0c6ddb8'
+API_KEY = os.getenv('TOKEN')
 
 # Import Australian city data from JSON file
 file = open('au-coor.json', 'r')
