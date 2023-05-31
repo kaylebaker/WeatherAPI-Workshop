@@ -6,7 +6,7 @@ class App(tk.Tk): # Define App class that inherits from tk.Tk class
     def __init__(self):
         super().__init__() # Call the __init__() method of the tk.Tk class
 
-        self.API_KEY = '3c929f3f47fb38fc03148347f0c6ddb8'
+        self.API_KEY = ''
         self.base_url = 'https://api.openweathermap.org/data/2.5/weather?'
 
         # Read in data of Australian cities from json file
